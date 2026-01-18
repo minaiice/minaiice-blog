@@ -11,7 +11,9 @@ draft: false
 
 ## 安装原生`Python3.12.x`
 
-1. 在python官网https://www.python.org/downloads选择合适的python版本，我这里是`Python3.12.7`
+1. 在python官网https://www.python.org/downloads
+
+   选择合适的python版本，我这里是`Python3.12.7`
 2. 安装时候，务必勾选`Use admin privileges when installing py.exe`以及`Add python.exe to PATH`
 3. 使用`Pycharm`等工具进行开发
 
