@@ -1,49 +1,26 @@
+本站使用Astro框架和 [Mizuki](https://github.com/matsuzaka-yuki/mizuki) 主题搭建.
 
-This website is built with the **Astro** framework using the [Mizuki](https://github.com/matsuzaka-yuki/mizuki) theme.
-
-::github{repo="matsuzaka-yuki/Mizuki"}
-
-## 🌟 Theme Features
-
-### 🎨 Design & User Experience
-- **Modern & Elegant Design** - Clean, minimalist interface with beautiful typography
-- **Fully Responsive** - Optimized for all devices from mobile to desktop
-- **Dark/Light Mode** - Automatic theme switching with smooth transitions
-- **Beautiful Typography** - Enhanced readability with JetBrains Mono font
-- **Smooth Animations** - Fluid page transitions and interactive elements
-
-### 🔍 Content & Search
-- **Advanced Search** - Powered by [Pagefind](https://pagefind.app/) for fast, accurate results
-- **Enhanced Markdown** - Extended syntax with code highlighting and math support
-- **Interactive Table of Contents** - Auto-scroll navigation for long articles
-- **RSS Feed Generation** - Stay updated with automatic feed generation
-- **Reading Time Estimation** - Know how long articles take to read
-- **Post Categorization** - Organize content with tags and categories
+::github{repo="minaiice/minaiice-blog"}
 
 
 
-### 📱 Special Pages
-- **Anime Tracking Page** - Track your anime watching progress with ratings
-- **Friends Links Page** - Showcase friend websites with beautiful cards
-- **Diary/Moments Page** - Share life moments like social media posts
-- **Archive Page** - Organized timeline view of all posts
-- **About Page** - Customizable personal introduction (this page!)
+## 建站初衷
 
-### 🛠 Technical Features
-- **Enhanced Code Blocks** - Powered by [Expressive Code](https://expressive-code.com/)
-- **Math Support** - LaTeX rendering with KaTeX for mathematical expressions
-- **Image Optimization** - PhotoSwipe gallery with lazy loading
-- **SEO Optimized** - Built-in sitemap and meta tags for better search visibility
-- **Performance Optimized** - Fast loading with caching and optimization
-- **Comment System Ready** - Integration support for Twikoo comments
+- 本人非计算机科班出身, 只是比较喜欢个人博客这种表现形式
+- 希望能够通过这种方式学到一些知识, 并且将各种知识整理和串联起来
+- 记录一些兴趣爱好方面的内容和一些生活碎片
 
-### 🎯 Advanced Markdown Features
-- **Callouts & Admonitions** - Beautiful info boxes with `> [!NOTE]`, `> [!TIP]`, `> [!WARNING]`
-- **Mathematical Equations** - Write LaTeX math with `$inline$` and `$$block$$` syntax
-- **GitHub Cards** - Embed repository cards with `::github{repo="user/repo"}`
-- **Syntax Highlighting** - Advanced code highlighting with line numbers
-- **Copy Code Buttons** - Easy code copying functionality
+
+
+## 个人简介
+
+- 喜欢一点编程, 捣鼓一些简单的东西, 但目前没什么成果
+- 爱好音乐, 古风, 中文vocaloid, acg, 流行等都有涉及, 但不算杂食
+- 平时接触很多二次元圈子, 但程度不深
+- 近期的一个想法是搞摄影, 但目前还没有足够的经济条件来买相机
+
+
 
 ---
 
-*Built with ❤️ using Astro and inspired by modern web design principles.*
+感谢你看到了这里, 欢迎从各种渠道与我继续交流想法!

@@ -70,5 +70,77 @@ print("height=", height, "width=", width, "channels=", channels)
 height= 640 width= 640 channels= 4
 ```
 
+使用`imwrite()`可以输出图像到文件, 用法为: `cv.imwrite(filename, img[, params])`, 其中`params`表示特定格式保存的参数, 例如:
+
+- `cv.IMWRITE_PNG_COMPRESSION`: 对于PNG格式保存, 压缩级别可在 0 到 9 之间. 值越高, 文件大小越小, 压缩时间越长, 默认值为1(最佳速度设置)
+- `cv.IMWRITE_JPEG_QUALITY`: 对应JPEG格式保存, 质量范围在0~100, 默认值为95
+
+更多参数可以查阅OpenCV官方文档
+
+使用示例:
+
+```py
+#把png图片右上角改为半透明, 并输出
+import cv2 as cv
+
+img = cv.imread("cirno.png", cv.IMREAD_UNCHANGED)
+b, g, r, a = cv.split(img)
+print(a.shape)
+a[:int(a.shape[0]/2), int(a.shape[1]/2):] = 127
+img = cv.merge((b, g, r, a))
+cv.imshow("img", img)
+cv.waitKey(0)
+cv.destroyAllWindows()
+cv.imwrite("cirno1.png", img, [cv.IMWRITE_PNG_COMPRESSION, 9]) #opencv的查看窗口无法看到透明效果, 必须保存后查看
+```
+
+
+
+## 基础图像处理
+
+### 颜色空间转换
+
+通过`cvtColor()`函数进行颜色空间的转换, 可以将图片转换成灰度图, 二值图, HSV以及HSI等不同颜色空间, 其用法为: `cv.cvtColor(src, code[, dst[, dstCn]])` 其中`code`表示颜色空间转换参数, `dst`表示输出与`src`相同大小和深度的图像, `dstCn`表示目标图像通道数, 其默认值为0, 即根据源图像和目标图像自动确定
+
+```py
+#将图像分别转换为灰度图和
+src_img = cv.imread("cirno.png", cv.IMREAD_UNCHANGED)
+gray_img = cv.cvtColor(src_img,cv.COLOR_BGR2GRAY)
+hsv_img = cv.cvtColor(src_img,cv.COLOR_BGR2HSV)
+h, s, v = cv.split(hsv_img)
+cv.imshow("gray_img", gray_img)
+cv.imshow("h", h) #色调
+cv.imshow("s", s) #饱和度
+cv.imshow("v", v) #灰度
+#由于opencv内部窗口只能显示BGR格式的图像, 所以不能正常显示HSV图像
+cv.waitKey(0)
+cv.destroyAllWindows()
+```
+
+
+
+### 基本图形绘制
+
+|      函数      |      描述      |
+| :------------: | :------------: |
+| cv.rectangle() |    绘制矩形    |
+|  cv.circle()   |    绘制圆形    |
+|  cv.ellipse()  |    绘制椭圆    |
+|   cv.line()    |    绘制线段    |
+| cv.polylines() |   绘制多边形   |
+| cv.fillPoly()  | 绘制填充多边形 |
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
