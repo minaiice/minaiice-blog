@@ -1,6 +1,7 @@
 ---
 title: NumPy手册
 published: 2025-12-30
+description: NumPy基础
 tags: [Python]
 category: Technology
 author: minai
