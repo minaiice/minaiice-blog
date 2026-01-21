@@ -112,7 +112,7 @@ cv.imwrite("cirno1.png", img, [cv.IMWRITE_PNG_COMPRESSION, 9]) #opencv的查看�
 其中`code`表示颜色空间转换参数, `dst`表示输出与`src`相同大小和深度的图像, `dstCn`表示目标图像通道数, 其默认值为0, 即根据源图像和目标图像自动确定
 
 ```py
-#将图像分别转换为灰度图和
+#将图像分别转换为灰度图和HSV图像
 src_img = cv.imread("cirno.png", cv.IMREAD_UNCHANGED)
 gray_img = cv.cvtColor(src_img,cv.COLOR_BGR2GRAY)
 hsv_img = cv.cvtColor(src_img,cv.COLOR_BGR2HSV)
@@ -141,37 +141,106 @@ cv.destroyAllWindows()
 
 更多绘制函数可以查看OpenCV官方文档
 
-使用`cv.rectangle()`可以绘制矩形, 其用法为
+- 使用`rectangle()`可以绘制矩形, 其用法为
 
-`cv.rectangle(img, pt1, pt2, color[, thickness[, lineType[, shift]]])`
+`cv.rectangle(img, pt1, pt2, color, thickness=1, lineType=LINE_8, shift=0)`
 
 或者
 
-`cv.rectangle(img, rec, color[, thickness[, lineType[, shift]]])` 
+`cv.rectangle(img, rec, color, thickness=1, lineType=LINE_8, shift=0)` 
 
-其中`pt1`和`pt2`表示对角线的两个点坐标元组, `rec`表示左上角坐标和宽高组成的元组, `color`表示矩形的颜色或亮度(灰度图像), `thickness`表示线条粗细, 取负值时(如`cv.FILLED`)表示绘制填充矩形, `lineType`表示线条类型, `shift`表示点坐标的移位位数 
+其中`pt1`和`pt2`表示对角线的两个点坐标元组, `rec`表示左上角坐标和宽高组成的元组, `color`表示矩形的颜色或亮度(灰度图像), `thickness`表示线条粗细, 取负值时(如`cv.FILLED`)表示绘制填充矩形, `lineType`表示线条类型, `shift`表示点坐标的移位位数
+
+- 使用`circle()`可以绘制圆形, 其用法为
+
+`cv.circle(img, center, radius, color, thickness=1, lineType=LINE_8, shift=0)`
+
+其中`center`表示圆心坐标, `radius`表示半径
+
+- 使用`ellipse()`绘制椭圆, 其用法为
+
+`cv.ellipse(img, center, axes, angle, start_angle, end_angle, color, thickness=1, lineType=LINE_8, shift=0)`
+
+其中`axes`表示轴长, `angle`表示偏转角, `start_angle`和`end_angle`分别表示圆弧起始位置角度和终止位置角度
 
 使用示例:
 
 ```py
-#在图像左上角绘制一个100x150的边框, 颜色为66ccff
+#在图像左上角分别绘制一个矩形, 圆形, 椭圆
 src_img = cv.imread("cirno.png", cv.IMREAD_UNCHANGED)
-rec = (30, 40, 100, 150)
-img = cv.rectangle(src_img, (30, 40), (130, 180), (255, 204, 102, 0), 2) #使用rec参数可以写成(30, 40, 100, 150)
-cv.imshow("img", img)
-cv.waitKey(0)
-cv.destroyAllWindows()
+rect_img = src_img.copy()
+cv.rectangle(rect_img, (30, 40), (130, 180), (255, 204, 102, 255), 2)
+cir_img = src_img.copy()
+cv.circle(cir_img, (150, 150), 80, (255, 204, 102, 255), 2)
+ellipse_img = src_img.copy()
+cv.ellipse(ellipse_img, (150, 150), (80, 40), -60, 0, 360, (255, 204, 102, 255), 2) #-60表示逆时针旋转椭圆
 ```
 
 输出图像:
 
-![rect](OpenCV手册/rect.png)
+<div style="display:flex;"> <img src="https://cdn.jsdelivr.net/gh/minaiice/minai-image-bed/pictures/20260121212801224.png" width="32%"/> <img src="https://cdn.jsdelivr.net/gh/minaiice/minai-image-bed/pictures/20260121215049571.jpg" width="32%"/><img src="https://cdn.jsdelivr.net/gh/minaiice/minai-image-bed/pictures/20260121220810666.jpg" width="32%"/> </div> 
 
-<img src="OpenCV手册/rect.png" width="300">
+- 使用polylines()可以绘制多边形, 其用法为
+
+`cv.polylines(img, pts, isClosed, color, thickness=1, lineType=LINE_8, shift=0)`
+
+其中`pts`表示包含多边形顶点的数组, `isClosed`表示绘制的多边形线段是否闭合
+
+- 使用`fillPoly()`可以绘制填充多边形, 其用法为
+
+`cv.fillPoly(img, pts, color, thickness=1, lineType=LINE_8, shift=0[, offset])`
+
+其中`offset`表示轮廓上所有点的偏移量, 方便绘制多个位置不同的相同多边形
+
+使用示例:
+
+```py
+src_img = cv.imread("cirno.png", cv.IMREAD_UNCHANGED)
+poly_img = src_img.copy()
+pts = np.array([(50, 40), (150, 60), (60, 180)], np.int32) #多边形点集, 数据类型一定要是int32
+cv.polylines(poly_img, [pts], True, (255, 204, 102, 255), 2)
+fillpoly_img = src_img.copy()
+cv.fillPoly(fillpoly_img, [pts], (255, 204, 102), offset=(80, 80)) #绘制填充多边形, 并且向右下方位移(80, 80)
+```
+
+输出图像:
+
+<div style="display:flex;"> <img src="https://cdn.jsdelivr.net/gh/minaiice/minai-image-bed/pictures/20260121231103185.jpg" width="48%"/> <img src="https://cdn.jsdelivr.net/gh/minaiice/minai-image-bed/pictures/20260121231103186.jpg" width="48%"/> </div> 
 
 
 
+### 打印文字
 
+使用`putText()`函数可以在图片上打印文字(注意, 该函数无法识别中文, 因此不能打印中文) 其用法为
 
+`cv.putText(img, text, org, fontFace, fontScale, color, thickness=1, lineType=LINE_8, bottomLeftOrigin=false)`
 
+其中`text`表示要绘制的文本字符串, `org`表示文本字符串的锚点坐标, `fontFace`字体类型，参见 [HersheyFonts](https://docs.opencv.ac.cn/4.12.0/d6/d6e/group__imgproc__draw.html#ga0f9314ea6e35f99bb23f29567fc16e11)。`fontScale`字体缩放因子, 负数时会使文本镜像或者反转, `bottomLeftOrigin`默认为`false`, 即以左上角为锚点, 反之在左下角(但是我自己用的时候实际效果是字体颠倒了)
 
+可以通过函数`getTextSize()`来确定文本框大小和基线偏移量(即文本框与基线的垂直距离), 方便绘制, 用法为
+
+`cv.getTextSize(text, fontFace, fontScale, thickness)`
+
+使用示例:
+
+```py
+src_img = cv.imread("cirno.png", cv.IMREAD_UNCHANGED)
+text_img = src_img.copy()
+cv.putText(text_img, "Minaiice", (80, 80), cv.FONT_HERSHEY_COMPLEX, 2.0, (255, 204, 102, 255), 2)
+cv.imshow("text", text_img)
+```
+
+输出图像:
+
+![text](OpenCV手册/text.jpg)
+
+### 添加边框
+
+使用`copyMakeBorder()`可以为图像设置边界, 即在图像边沿进行额外填充, 用法如下
+
+`cv.copyMakeBorder(src, top, bottom, left, right, borderType[, dst[, value]])`
+
+其中`top`, `bottom`, `left`, `right`表示在原图像四个方向填充的像素量; `borderType`表示边界类型, 取值如下:
+
+- 
+- 
