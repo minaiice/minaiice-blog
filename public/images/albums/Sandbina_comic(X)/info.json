@@ -1,0 +1,50 @@
+{
+	"mode": "external",
+	"title": "鸽猫漫画(生肉)",
+	"hidden": false,
+	"description": "哥-伦-比-娅! 你要干嘛!",
+	"date": "2026-03-07",
+	"location": "NodKrai",
+	"tags": ["Columbina", "Sandrone", "Sandbina"],
+	"layout": "masonry",
+	"columns": 3,
+	"cover": "https://img.minaiice.cn/minaiice-pictures/picgo/@polinky0141.jpg",
+	"photos": [
+    {
+      "src": "https://img.minaiice.cn/minaiice-pictures/picgo/@_azzuwu__09.jpg",
+      "title": "@_azzuwu__09"
+    },
+    {
+      "src": "https://img.minaiice.cn/minaiice-pictures/picgo/@_azzuwu__10.jpg",
+      "title": "@_azzuwu__10"
+    },
+    {
+      "src": "https://img.minaiice.cn/minaiice-pictures/picgo/@catcap22_1.jpg",
+      "title": "@catcap22_1"
+    },
+    {
+      "src": "https://img.minaiice.cn/minaiice-pictures/picgo/@catcap22_2.jpg",
+      "title": "@catcap22_2"
+    },
+    {
+      "src": "https://img.minaiice.cn/minaiice-pictures/picgo/@catcap22_3.jpg",
+      "title": "@catcap22_3"
+    },
+    {
+      "src": "https://img.minaiice.cn/minaiice-pictures/picgo/@catcap22_4.jpg",
+      "title": "@catcap22_4"
+    },
+    {
+      "src": "https://img.minaiice.cn/minaiice-pictures/picgo/@catcap22_5.jpg",
+      "title": "@catcap22_5"
+    },
+    {
+      "src": "https://img.minaiice.cn/minaiice-pictures/picgo/@catcap22_6.jpg",
+      "title": "@catcap22_6"
+    },
+    {
+      "src": "https://img.minaiice.cn/minaiice-pictures/picgo/@b9rensui.jpg",
+      "title": "@b9rensui"
+    }
+  ]
+}
