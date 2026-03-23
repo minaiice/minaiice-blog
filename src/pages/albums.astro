@@ -29,8 +29,8 @@ const albumsData = await scanAlbums();
                   before:absolute before:top-1/2 before:-translate-y-1/2 before:-left-4">
           {i18n(I18nKey.albums)}
         </h1>
-        <p class="text-neutral-600 dark:text-neutral-400">
-          {i18n(I18nKey.albumsSubtitle)}
+        <p class="text-neutral-600 dark:text-neutral-400"
+          set:html={i18n(I18nKey.albumsSubtitle)}>
         </p>
       </header>
 

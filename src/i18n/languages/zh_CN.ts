@@ -115,7 +115,7 @@ export const zh_CN: Translation = {
 
 	// 相册页面
 	[Key.albums]: "相册",
-	[Key.albumsSubtitle]: "记录生活中的美好瞬间",
+	[Key.albumsSubtitle]: "一些个人的插画收藏~<br><a href='https://img.minaiice.cn/minaiice-pictures/picgo/access.gif' target='_blank' style='color:#66ccff;'>(点击获取相册访问权限)</a>",
 	[Key.albumsEmpty]: "暂无内容",
 	[Key.albumsEmptyDesc]: "还没有创建任何相册，快去添加一些美好的回忆吧！",
 	[Key.albumsBackToList]: "返回相册",
