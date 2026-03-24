@@ -1,6 +1,6 @@
 {
 	"mode": "external",
-	"hidden": true,
+	"hidden": false,
 	"title": "小鸽子收藏夹",
 	"description": "需要我借你一束月光吗?",
 	"date": "2026-01-14",
@@ -8,7 +8,327 @@
 	"tags": ["Columbina"],
 	"layout": "masonry",
 	"columns": 3,
-	"cover": "https://picsum.photos/800/600?random=1",
+	"cover": "https://img.minaiice.cn/minaiice-pictures/picgo/@Nononono_bouzu_8.jpg",
 	"photos": [
+    {
+      "src": "https://img.minaiice.cn/minaiice-pictures/picgo/@alvis_tayl96598_1.jpg",
+      "title": "@alvis_tayl96598_1"
+    },
+    {
+      "src": "https://img.minaiice.cn/minaiice-pictures/picgo/@alvis_tayl96598_2.jpg",
+      "title": "@alvis_tayl96598_2"
+    },
+    {
+      "src": "https://img.minaiice.cn/minaiice-pictures/picgo/@alvis_tayl96598_3.jpg",
+      "title": "@alvis_tayl96598_3"
+    },
+    {
+      "src": "https://img.minaiice.cn/minaiice-pictures/picgo/@alvis_tayl96598_4.jpg",
+      "title": "@alvis_tayl96598_4"
+    },
+    {
+      "src": "https://img.minaiice.cn/minaiice-pictures/picgo/@alvis_tayl96598_5.jpg",
+      "title": "@alvis_tayl96598_5"
+    },
+    {
+      "src": "https://img.minaiice.cn/minaiice-pictures/picgo/@Hyb__muyuu_3.jpg",
+      "title": "@Hyb__muyuu_3"
+    },
+    {
+      "src": "https://img.minaiice.cn/minaiice-pictures/picgo/@Hyb__muyuu_5.jpg",
+      "title": "@Hyb__muyuu_5"
+    },
+    {
+      "src": "https://img.minaiice.cn/minaiice-pictures/picgo/@Hyb__muyuu_1.jpg",
+      "title": "@Hyb__muyuu_1"
+    },
+    {
+      "src": "https://img.minaiice.cn/minaiice-pictures/picgo/@inuttm_disk_4.jpg",
+      "title": "@inuttm_disk_4"
+    },
+    {
+      "src": "https://img.minaiice.cn/minaiice-pictures/picgo/@inuttm_disk_5.jpg",
+      "title": "@inuttm_disk_5"
+    },
+    {
+      "src": "https://img.minaiice.cn/minaiice-pictures/picgo/@juice_j78c3_2.jpg",
+      "title": "@juice_j78c3_2"
+    },
+    {
+      "src": "https://img.minaiice.cn/minaiice-pictures/picgo/@kario52176_2.jpg",
+      "title": "@kario52176_2"
+    },
+    {
+      "src": "https://img.minaiice.cn/minaiice-pictures/picgo/@KitsuneTenma_45.jpg",
+      "title": "@KitsuneTenma_45"
+    },
+    {
+      "src": "https://img.minaiice.cn/minaiice-pictures/picgo/@KitsuneTenma_04.jpg",
+      "title": "@KitsuneTenma_04"
+    },
+    {
+      "src": "https://img.minaiice.cn/minaiice-pictures/picgo/@KitsuneTenma_05.jpg",
+      "title": "@KitsuneTenma_05"
+    },
+    {
+      "src": "https://img.minaiice.cn/minaiice-pictures/picgo/@KitsuneTenma_16.jpg",
+      "title": "@KitsuneTenma_16"
+    },
+    {
+      "src": "https://img.minaiice.cn/minaiice-pictures/picgo/@KitsuneTenma_18.jpg",
+      "title": "@KitsuneTenma_18"
+    },
+    {
+      "src": "https://img.minaiice.cn/minaiice-pictures/picgo/@KitsuneTenma_29.jpg",
+      "title": "@KitsuneTenma_29"
+    },
+    {
+      "src": "https://img.minaiice.cn/minaiice-pictures/picgo/@KitsuneTenma_39.jpg",
+      "title": "@KitsuneTenma_39"
+    },
+    {
+      "src": "https://img.minaiice.cn/minaiice-pictures/picgo/@KitsuneTenma_44.jpg",
+      "title": "@KitsuneTenma_44"
+    },
+    {
+      "src": "https://img.minaiice.cn/minaiice-pictures/picgo/@KKAPPIKKA01_6.jpg",
+      "title": "@KKAPPIKKA01_6"
+    },
+    {
+      "src": "https://img.minaiice.cn/minaiice-pictures/picgo/@mottopoyoo_1.jpg",
+      "title": "@mottopoyoo_1"
+    },
+    {
+      "src": "https://img.minaiice.cn/minaiice-pictures/picgo/@neko_kattenai_i_1.jpg",
+      "title": "@neko_kattenai_i_1"
+    },
+    {
+      "src": "https://img.minaiice.cn/minaiice-pictures/picgo/@neko_kattenai_i_2.jpg",
+      "title": "@neko_kattenai_i_2"
+    },
+    {
+      "src": "https://img.minaiice.cn/minaiice-pictures/picgo/@neko_kattenai_i_3.jpg",
+      "title": "@neko_kattenai_i_3"
+    },
+    {
+      "src": "https://img.minaiice.cn/minaiice-pictures/picgo/@neko_kattenai_i_4.jpg",
+      "title": "@neko_kattenai_i_4"
+    },
+    {
+      "src": "https://img.minaiice.cn/minaiice-pictures/picgo/@neko_kattenai_i_5.jpg",
+      "title": "@neko_kattenai_i_5"
+    },
+    {
+      "src": "https://img.minaiice.cn/minaiice-pictures/picgo/@neko_kattenai_i_6.jpg",
+      "title": "@neko_kattenai_i_6"
+    },
+    {
+      "src": "https://img.minaiice.cn/minaiice-pictures/picgo/@Nekotaro_719_1.jpg",
+      "title": "@Nekotaro_719_1"
+    },
+    {
+      "src": "https://img.minaiice.cn/minaiice-pictures/picgo/@Nononono_bouzu_8.jpg",
+      "title": "@Nononono_bouzu_8"
+    },
+    {
+      "src": "https://img.minaiice.cn/minaiice-pictures/picgo/@Nononono_bouzu_1.jpg",
+      "title": "@Nononono_bouzu_1"
+    },
+    {
+      "src": "https://img.minaiice.cn/minaiice-pictures/picgo/@Nononono_bouzu_4.jpg",
+      "title": "@Nononono_bouzu_4"
+    },
+    {
+      "src": "https://img.minaiice.cn/minaiice-pictures/picgo/@nuiilar_01.jpg",
+      "title": "@nuiilar_01"
+    },
+    {
+      "src": "https://img.minaiice.cn/minaiice-pictures/picgo/@nuiilar_02.jpg",
+      "title": "@nuiilar_02"
+    },
+    {
+      "src": "https://img.minaiice.cn/minaiice-pictures/picgo/@nuiilar_03.jpg",
+      "title": "@nuiilar_03"
+    },
+    {
+      "src": "https://img.minaiice.cn/minaiice-pictures/picgo/@nuiilar_04.jpg",
+      "title": "@nuiilar_04"
+    },
+    {
+      "src": "https://img.minaiice.cn/minaiice-pictures/picgo/@nuiilar_05.jpg",
+      "title": "@nuiilar_05"
+    },
+    {
+      "src": "https://img.minaiice.cn/minaiice-pictures/picgo/@nuiilar_06.jpg",
+      "title": "@nuiilar_06"
+    },
+    {
+      "src": "https://img.minaiice.cn/minaiice-pictures/picgo/@nuiilar_07.jpg",
+      "title": "@nuiilar_07"
+    },
+    {
+      "src": "https://img.minaiice.cn/minaiice-pictures/picgo/@nuiilar_08.jpg",
+      "title": "@nuiilar_08"
+    },
+    {
+      "src": "https://img.minaiice.cn/minaiice-pictures/picgo/@nuiilar_09.jpg",
+      "title": "@nuiilar_09"
+    },
+    {
+      "src": "https://img.minaiice.cn/minaiice-pictures/picgo/@nuiilar_10.jpg",
+      "title": "@nuiilar_10"
+    },
+    {
+      "src": "https://img.minaiice.cn/minaiice-pictures/picgo/@nuiilar_11.jpg",
+      "title": "@nuiilar_11"
+    },
+    {
+      "src": "https://img.minaiice.cn/minaiice-pictures/picgo/@OkiAutumn_04.jpg",
+      "title": "@OkiAutumn_04"
+    },
+    {
+      "src": "https://img.minaiice.cn/minaiice-pictures/picgo/@OkiAutumn_07.jpg",
+      "title": "@OkiAutumn_07"
+    },
+    {
+      "src": "https://img.minaiice.cn/minaiice-pictures/picgo/@OkiAutumn_08.jpg",
+      "title": "@OkiAutumn_08"
+    },
+    {
+      "src": "https://img.minaiice.cn/minaiice-pictures/picgo/@Omces96_1.jpg",
+      "title": "@Omces96_1"
+    },
+    {
+      "src": "https://img.minaiice.cn/minaiice-pictures/picgo/@Omces96_3.jpg",
+      "title": "@Omces96_3"
+    },
+    {
+      "src": "https://img.minaiice.cn/minaiice-pictures/picgo/@Omces96_6.jpg",
+      "title": "@Omces96_6"
+    },
+    {
+      "src": "https://img.minaiice.cn/minaiice-pictures/picgo/@shoujolei_10.jpg",
+      "title": "@shoujolei_10"
+    },
+    {
+      "src": "https://img.minaiice.cn/minaiice-pictures/picgo/@shoujolei_11.jpg",
+      "title": "@shoujolei_11"
+    },
+    {
+      "src": "https://img.minaiice.cn/minaiice-pictures/picgo/@shoujolei_01.jpg",
+      "title": "@shoujolei_01"
+    },
+    {
+      "src": "https://img.minaiice.cn/minaiice-pictures/picgo/@shoujolei_05.jpg",
+      "title": "@shoujolei_05"
+    },
+    {
+      "src": "https://img.minaiice.cn/minaiice-pictures/picgo/@shoujolei_07.jpg",
+      "title": "@shoujolei_07"
+    },
+    {
+      "src": "https://img.minaiice.cn/minaiice-pictures/picgo/@stncmlt_1.jpg",
+      "title": "@stncmlt_1"
+    },
+    {
+      "src": "https://img.minaiice.cn/minaiice-pictures/picgo/@TansanLemon100_19.jpg",
+      "title": "@TansanLemon100_19"
+    },
+    {
+      "src": "https://img.minaiice.cn/minaiice-pictures/picgo/@TansanLemon100_08.jpg",
+      "title": "@TansanLemon100_08"
+    },
+    {
+      "src": "https://img.minaiice.cn/minaiice-pictures/picgo/@TansanLemon100_11.jpg",
+      "title": "@TansanLemon100_11"
+    },
+    {
+      "src": "https://img.minaiice.cn/minaiice-pictures/picgo/@TansanLemon100_18.jpg",
+      "title": "@TansanLemon100_18"
+    },
+    {
+      "src": "https://img.minaiice.cn/minaiice-pictures/picgo/@to_ri5511_04.jpg",
+      "title": "@to_ri5511_04"
+    },
+    {
+      "src": "https://img.minaiice.cn/minaiice-pictures/picgo/@toha_tm11_02.jpg",
+      "title": "@toha_tm11_02"
+    },
+    {
+      "src": "https://img.minaiice.cn/minaiice-pictures/picgo/@toha_tm11_05.jpg",
+      "title": "@toha_tm11_05"
+    },
+    {
+      "src": "https://img.minaiice.cn/minaiice-pictures/picgo/@toha_tm11_09.jpg",
+      "title": "@toha_tm11_09"
+    },
+    {
+      "src": "https://img.minaiice.cn/minaiice-pictures/picgo/@tokonatts_1.jpg",
+      "title": "@tokonatts_1"
+    },
+    {
+      "src": "https://img.minaiice.cn/minaiice-pictures/picgo/@tsuyurieri1228_1.jpg",
+      "title": "@tsuyurieri1228_1"
+    },
+    {
+      "src": "https://img.minaiice.cn/minaiice-pictures/picgo/@tsuyurieri1228_2.jpg",
+      "title": "@tsuyurieri1228_2"
+    },
+    {
+      "src": "https://img.minaiice.cn/minaiice-pictures/picgo/@yuuumara_1.jpg",
+      "title": "@yuuumara_1"
+    },
+    {
+      "src": "https://img.minaiice.cn/minaiice-pictures/picgo/@yuuumara_6.jpg",
+      "title": "@yuuumara_6"
+    },
+    {
+      "src": "https://img.minaiice.cn/minaiice-pictures/picgo/@yiyiyiyi670_1.jpg",
+      "title": "@yiyiyiyi670_1"
+    },
+    {
+      "src": "https://img.minaiice.cn/minaiice-pictures/picgo/@yiyiyiyi670_2.jpg",
+      "title": "@yiyiyiyi670_2"
+    },
+    {
+      "src": "https://img.minaiice.cn/minaiice-pictures/picgo/@xxxo_oxxx____1.jpg",
+      "title": "@xxxo_oxxx____1"
+    },
+    {
+      "src": "https://img.minaiice.cn/minaiice-pictures/picgo/@xxxo_oxxx____5.jpg",
+      "title": "@xxxo_oxxx____5"
+    },
+    {
+      "src": "https://img.minaiice.cn/minaiice-pictures/picgo/@Wata7Teddy_1.jpg",
+      "title": "@Wata7Teddy_1"
+    },
+    {
+      "src": "https://img.minaiice.cn/minaiice-pictures/picgo/@vtu4ln_04.jpg",
+      "title": "@vtu4ln_04"
+    },
+    {
+      "src": "https://img.minaiice.cn/minaiice-pictures/picgo/@Unajyudayo_02.jpg",
+      "title": "@Unajyudayo_02"
+    },
+    {
+      "src": "https://img.minaiice.cn/minaiice-pictures/picgo/@Unajyudayo_05.jpg",
+      "title": "@Unajyudayo_05"
+    },
+    {
+      "src": "https://img.minaiice.cn/minaiice-pictures/picgo/@Unajyudayo_23.jpg",
+      "title": "@Unajyudayo_23"
+    },
+    {
+      "src": "https://img.minaiice.cn/minaiice-pictures/picgo/@zikyuuu_01.png",
+      "title": "@zikyuuu_01"
+    },
+    {
+      "src": "https://img.minaiice.cn/minaiice-pictures/picgo/@zikyuuu_03.png",
+      "title": "@zikyuuu_03"
+    },
+    {
+      "src": "https://img.minaiice.cn/minaiice-pictures/picgo/@zikyuuu_29.jpg",
+      "title": "@zikyuuu_29"
+    }
 	]
 }
