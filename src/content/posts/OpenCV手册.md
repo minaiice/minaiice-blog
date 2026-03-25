@@ -242,5 +242,61 @@ cv.imshow("text", text_img)
 
 其中`top`, `bottom`, `left`, `right`表示在原图像四个方向填充的像素量; `borderType`表示边界类型, 取值如下:
 
-- 
-- 
+- `BORDER_REPLICATE`: 复制法, 复制最边缘像素, 填充扩充的边界, 中值滤波就采取这种方法
+- `BORDER_REFLECT_101`: 对称法, 以最边缘像素为轴, 对称填充, 这是高斯滤波边界处理的默认方法
+- `BORDER_CONSTANT`: 常量法, 以一个常量像素值(`value`)填充扩充的边界, 在仿射变换和透视变换中常见
+- `BORDER_REFLECT`: 与对称法原理一致, 不过最边缘像素也要对称过去
+- `BORDER_WRAP`: 用另一侧元素来填充这一侧的扩充边界
+
+图片示例:
+
+<div style="display:flex; gap: 10px;">
+  <div style="text-align:center; width:46%;">
+    <img src="https://cdn.jsdelivr.net/gh/minaiice/minai-image-bed/pictures/replicate.jpg" style="width:100%;">
+    <div>replicate</div>
+  </div>
+
+  <div style="text-align:center; width:46%;">
+    <img src="https://cdn.jsdelivr.net/gh/minaiice/minai-image-bed/pictures/reflect.jpg" style="width:100%;">
+    <div>reflect</div>
+  </div>
+</div>
+
+<div style="display:flex; gap: 10px;">
+  <div style="text-align:center; width:46%;">
+    <img src="https://cdn.jsdelivr.net/gh/minaiice/minai-image-bed/pictures/reflect101.jpg" style="width:100%;">
+    <div>reflect101</div>
+  </div>
+
+  <div style="text-align:center; width:46%;">
+    <img src="https://cdn.jsdelivr.net/gh/minaiice/minai-image-bed/pictures/wrap.jpg" style="width:100%;">
+    <div>wrap</div>
+  </div>
+</div>
+
+### 查找轮廓
+
+使用`findContours()`可以检测物体轮廓, 用法如下
+
+`cv.findContours(image, mode, method[, contours[, hierarchy[, offset]]])`
+
+其中`image`表示原始图像, 必须是8位单通道二值图像, 参数`mode`决定轮廓提取方式, 具体有如下四种:
+
+- `PETR_EXTERNAL`: 只检测外轮廓
+- `PETR_LIST`: 对检测到的轮廓不建立等级关系
+- `PETR_CCOMP`: 检索所有轮廓并将它们组织成两级层级结构. 上面一层为外边界, 下面一层为内孔边界. 如果内孔内还有一个连通物体, 那么这个物体的边界仍然位于顶层
+- `PETR_TREE`: 建立一个等级树结构的轮廓
+
+参数method决定表达轮廓的方式, 可选值如下：
+
+- `CHAIN_APPROX_NONE`: 存储所有轮廓点, 相邻两个点的像素位置差不超过1
+- `CHAIN_APPROX_SIMPLE`: 压缩水平方向, 垂直方向, 对角线方向的元素, 只保留该方向的终点坐标. 例如一个矩形只需要四个点保存轮廓信息
+
+
+
+
+
+
+
+
+
