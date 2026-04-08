@@ -261,7 +261,7 @@ export const navBarConfig: NavBarConfig = {
 		// },
 		{
 			name: "My",
-			url: "/content/",
+			url: "/about/",
 			icon: "material-symbols:person",
 			children: [
 				{
@@ -285,7 +285,7 @@ export const navBarConfig: NavBarConfig = {
 		},
 		{
 			name: "About",
-			url: "/content/",
+			url: "/about/",
 			icon: "material-symbols:info",
 			// children: [
 			// 	{

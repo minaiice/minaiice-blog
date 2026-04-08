@@ -1,6 +1,7 @@
 ---
 title: OpenCV手册
 published: 2026-01-18
+updated: 2026-04-08 23:45:00
 description: OpenCV基础
 tags: [Python, openCV]
 category: Technology
@@ -272,7 +273,13 @@ cv.imshow("text", text_img)
     <img src="https://cdn.jsdelivr.net/gh/minaiice/minai-image-bed/pictures/wrap.jpg" style="width:100%;">
     <div>wrap</div>
   </div>
-</div>
+  <div style="text-align:center; width:46%;">
+    <img src="https://cdn.jsdelivr.net/gh/minaiice/minai-image-bed/pictures/constant.jpg" style="width:100%;">
+    <div>constant</div>
+  </div>
+
+
+
 
 ### 查找轮廓
 
@@ -291,6 +298,67 @@ cv.imshow("text", text_img)
 
 - `CHAIN_APPROX_NONE`: 存储所有轮廓点, 相邻两个点的像素位置差不超过1
 - `CHAIN_APPROX_SIMPLE`: 压缩水平方向, 垂直方向, 对角线方向的元素, 只保留该方向的终点坐标. 例如一个矩形只需要四个点保存轮廓信息
+
+参数`contours`是一个向量, 并且是一个双重向量, 向量内每个元素保存了一组由连续的`Point`构成的点的集合向量, 每一组`Point` 点集就是一个轮廓, 有多少轮廓, 向量`contours`就有多少元素
+
+参数`hierarchy`也是一个向量, 向量内每个元素保存了一个包含4个int型的数组. `hierarchy`向量和轮廓向量`contours`内元素一一对应, 容量相同. `hierarchy`向量每一个元素的4个int型变量(`hierarchy[i][0] - hierarchy[i][3]`)分别对应后一个轮廓, 前一个轮廓, 父轮廓和子轮廓的索引编号. (若没有对应轮廓编号为`-1`)
+
+参数`offset`是每个轮廓点移动的可选偏移量
+
+使用`drawCountours()`可以绘制轮廓, 用法如下
+
+`cv.drawCountours(image, contours, contourIdx, color[, thickness[, lineType[, hierarchy[, maxLevel[, offset]]]]])`
+
+参数`contours`表示输入的轮廓组, 每一组轮廓由点`vector`构成; `contourIdx`指明画第几个轮廓, 若为负值则画出所有轮廓; `thickness`为线宽, 若为负值或`CV_FILLED`则表示填充内部; `lineType`为线型; `hierarchy`为轮廓结构信息; `maxLevel`为绘制轮廓的最高级别(只在`hierarchy`有效时生效, 值为`0`时绘制与输入轮廓同等级的所有轮廓`即相邻轮廓`), 值为`1`时绘制同一等级轮廓和其子节点, 值为`2`时绘制与输入轮廓所有同级轮廓, 及其子节点, 和子节点的子节点; `offset`表示可选的轮廓偏移参数
+
+使用示例:
+
+```python
+scale_percent = 30
+
+src_img = cv.imread("columbina_2.jpg", cv.IMREAD_UNCHANGED)
+width = int(src_img.shape[1] * scale_percent / 100)
+height = int(src_img.shape[0] * scale_percent / 100)
+dim = (width, height)
+resized = cv.resize(src_img, dim, interpolation=cv.INTER_AREA)
+gray = cv.cvtColor(resized, cv.COLOR_BGR2GRAY)
+cv.imshow("gray", gray), cv.waitKey(0), cv.destroyAllWindows()
+_, binary = cv.threshold(gray, 0, 255, cv.THRESH_BINARY_INV + cv.THRESH_OTSU) #反转黑白图, 因为轮廓检测白色物体
+cv.imshow("binary", binary), cv.waitKey(0), cv.destroyAllWindows()
+contours, hierarchy = cv.findContours(binary, cv.RETR_EXTERNAL, cv.CHAIN_APPROX_NONE)
+cv.imshow("binary2", binary), cv.waitKey(0), cv.destroyAllWindows() #查找轮廓会修改原图像
+cv.drawContours(resized, contours, -1, (200, 155, 255), 3)
+cv.imshow("contours", resized), cv.waitKey(0), cv.destroyAllWindows()
+```
+
+输出图像:
+<div style="display:flex; gap: 10px;">
+  <div style="text-align:center; width:46%;">
+    <img src="https://cdn.jsdelivr.net/gh/minaiice/minai-image-bed/pictures/gray.jpg" style="width:100%;">
+    <div>gray</div>
+  </div>
+
+  <div style="text-align:center; width:46%;">
+    <img src="https://cdn.jsdelivr.net/gh/minaiice/minai-image-bed/pictures/binary.jpg" style="width:100%;">
+    <div>binary</div>
+  </div>
+</div>
+
+<div style="display:flex; gap: 10px;">
+  <div style="text-align:center; width:46%;">
+    <img src="https://cdn.jsdelivr.net/gh/minaiice/minai-image-bed/pictures/binary2.jpg" style="width:100%;">
+    <div>binary2</div>
+  </div>
+
+  <div style="text-align:center; width:46%;">
+    <img src="https://cdn.jsdelivr.net/gh/minaiice/minai-image-bed/pictures/contours.jpg" style="width:100%;">
+    <div>countours</div>
+  </div>
+  </div>
+
+
+
+
 
 
 
