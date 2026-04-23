@@ -1,8 +1,8 @@
 ---
-title: MMD学习笔记(blender插件)
+title: MMD学习笔记
 published: 2026-03-10
 updated: 2026-03-20
-description: 学习在blender上的MMD插件
+description: 学习MMD制作
 tags: [Blender, MMD]
 category: Hobby
 author: minai
@@ -12,26 +12,6 @@ draft: false
 
 
 # Blender
-
-教程参考B站@miaobox
-
-## 常见问题
-
-- 模型贴图缺失
-
-![image-20260319225430162](MMD学习笔记/image-20260319225430162.png)
-
-解决方案: 选择模型 -> 转换给Blender, 这个操作会清理掉toon贴图:
-
-![image-20260319225608906](MMD学习笔记/image-20260319225608906.png)
-
-然后自行修改剩余有问题的材质: 
-
-![image-20260319225827947](MMD学习笔记/image-20260319225827947.png)
-
-![image-20260319225952948](MMD学习笔记/image-20260319225952948.png)
-
-![image-20260319230211116](MMD学习笔记/image-20260319230211116.png)
 
 ## 借助MMDBridge烘焙物理
 
@@ -44,13 +24,15 @@ draft: false
 - 导入模型就不说了, 重点是在Blender里面修复骨骼和修复变形, 然后将修复的模型导出
 - 重新打开Blender, 导入修复好的模型, 创建预设(渲染, 材质等), 打包成Blender文件后, 另存到工程地址
 - 进入MMD, 导入模型和动作, 修改动作防止穿模, 其他同图
-- 一定要选择装配变形!!!
+- 一定要选择装配变形!!! 在blender导入动作时, 必须同时选中角色网格和骨骼
 
 
 
 
 
+# Unity
 
+使用HoyoToon实现
 
 
 
